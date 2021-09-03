@@ -33,4 +33,4 @@ values
 ('Mario','Garcia','casado','1994/09/18','diversificado','mixco','58545956',SYSDATETIME(),'',3);
 
 select * from departamento;
-select * from empleado;
+select emp.* from empleado AS emp JOIN departamento AS dpt on dpt.departamento_id = emp.departamento_id  ;
